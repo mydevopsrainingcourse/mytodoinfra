@@ -4,7 +4,7 @@ resource "azurerm_network_security_group" "nsg" {
   resource_group_name = var.resource_group_name
 
   security_rule {
-    name                       = "mynsgsecrule_1"
+    name                       = "mynsgsecrule1"
     priority                   = 100
     direction                  = "Inbound"
     access                     = "Allow"
