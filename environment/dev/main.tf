@@ -4,6 +4,7 @@ module "rg_group" {
   resource_group_name     = var.resource_group_name
   resource_group_location = var.resource_group_location
 }
+#this is 102 ticket
 module "rg_group_3" {
   source                  = "../../modules/aurerm_resource_group"
   resource_group_name     = "ankit-dev_rg_3"
