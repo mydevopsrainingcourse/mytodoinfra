@@ -9,11 +9,8 @@ module "rg_group_2" {
   resource_group_name     = "ankit-dev_rg_2"
   resource_group_location = var.resource_group_location
 }
-module "rg_group_3" {
-  source                  = "../../modules/aurerm_resource_group"
-  resource_group_name     = "ankit-dev_rg_3"
-  resource_group_location = var.resource_group_location
-}
+
+
 module "virtual_network" {
   depends_on               = [module.rg_group]
   source                   = "../../modules/azurerm_virtual_network"
